@@ -58,5 +58,3 @@ rl.on("close", () => {
     `Life Support Rating is ${parseInt(oxygen[0], 2) * parseInt(co2[0], 2)}`
   );
 });
-
-// 4105235
