@@ -39,11 +39,11 @@ const advanceDay = (fish) => {
   };
   let fishkeys = Object.keys(fish);
   fishkeys.forEach((key) => {
-    if (key === "0") {
+    if (parseInt(key) === 0) {
       newFishData[6] += fish[0];
       newFishData[8] += fish[0];
     } else {
-      newFishData[key - 1] += fish[key];
+      newFishData[parseInt(key) - 1] += fish[key];
     }
   });
   return newFishData;
